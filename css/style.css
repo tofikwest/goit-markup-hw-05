@@ -246,7 +246,8 @@ img {
   position: absolute;
   content: '';
   display: block;
-  border: 1px solid #2196F3;
+  background-color: #2196F3;
+  height: 4px;
   width: 48px;
 
   left: 0;
@@ -259,7 +260,8 @@ img {
   position: absolute;
   content: '';
   display: block;
-  border: 1px solid #2196F3;
+  background-color: #2196F3;
+  height: 4px;
   width: 80px;
 
   left: 100px;

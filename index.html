@@ -67,7 +67,8 @@
       <!-- ГЛАВНАЯ СЕКЦИЯ -->
       <section class="main section-pos">
         <h1 class="main-title">Эффективные решения<br />для вашего бизнеса</h1>
-        <button type="button" class="main-button">Заказать услугу</button>
+        <button type="button" class="main-button" data-modal-open>Заказать услугу</button>
+
       </section>
 
       <!-- НАШИ ПРЕИМУЩЕСТВА -->
@@ -149,6 +150,7 @@
                 alt="1 сфера"
                 width="370"
               />
+              <p class="main-projects-content label-1">Десктопные приложения</p>
             </li>
 
             <li class="item">
@@ -158,6 +160,7 @@
                 alt="2 сфера"
                 width="370"
               />
+              <p class="main-projects-content label-2">Мобильные приложения</p>
             </li>
 
             <li class="item">
@@ -167,6 +170,7 @@
                 alt="3 сфера"
                 width="370"
               />
+              <p class="main-projects-content label-3">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -524,5 +528,22 @@
         </div>
       </div>
     </footer>
+    
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          
+        </p>
+        
+        <button class="modal-close" data-modal-close>
+          <svg class="icon-close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

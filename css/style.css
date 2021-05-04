@@ -75,6 +75,9 @@ p {
   margin: 0;
   padding: 0;
 }
+.link {
+  text-decoration: none
+}
 /* Картинкам меняем дисплей, 
 что бы убрать стандартный отступы 
 */
@@ -329,7 +332,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -495,7 +498,8 @@ img {
   height: 20px;
 }
 
-.circle:hover {
+.circle:hover,
+.circle:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
 }
@@ -533,7 +537,7 @@ img {
   cursor: pointer;
 }
 .item .thumb:hover .clients-logo,
-.item .thumb:focus {
+.logo-focus:focus .clients-logo {
   /*  */
   fill: var(--accent-color);
 }
@@ -541,6 +545,7 @@ img {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
+
 
 /* footer */
 
@@ -648,7 +653,8 @@ img {
 
   fill: var(--join-icon-logo-color);
 }
-.join-icon:hover {
+.join-icon:hover,
+.join-icon:focus {
   background: #2196f3;
 }
 
@@ -735,12 +741,15 @@ img {
   margin-top: var(--card-set-gap);
 }
 .card-set .item:hover,
-.card-set .item:focus {
+.card-set .card-focus:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
   cursor: pointer;
 }
+
+
+
 .project-card-disagn {
   padding: 20px 24px;
   border: 1px solid #eeeeee;

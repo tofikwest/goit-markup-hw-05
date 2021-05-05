@@ -767,15 +767,13 @@ img {
 }
 .modal-close {
   position: absolute;
-  right: 0px;
-  top:0px;
+  right: 8px;
+  top: 8px;
 
 
   width: 30px;
   height: 30px;
 
-  margin-top: 8px;
-  margin-right: 8px;
   
   background: var(--modal-background);
   border: 1px solid rgba(0, 0, 0, 0.1);

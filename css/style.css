@@ -879,7 +879,7 @@ img {
 
 .card-set > .item {
   position: relative;
-
+  overflow: hidden;
   flex-basis: calc(100% / 3 - var(--card-set-gap));
 
   margin-left: var(--card-set-gap);
@@ -896,50 +896,41 @@ img {
 }
 
 
-.card-item-thumb {
-  position: relative;
-  
-}
-
-.card-item-overlay {
+.card-description {
   position: absolute;
-  left: 0;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
 
   visibility: hidden;
-
-  width: 370px;
-  height: 294px;
-
-  overflow: hidden;
-
-  transform: translateY(30%);
   
-}
 
-.card-item-thumb .card-description {
-  
-  
-  width: 368px;
-  height: 168px;
+  width: 100%;
+  height: 298px;
 
   padding: 63px 24px;
-
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-
-}
-.card-item-thumb:hover .card-item-overlay,
-.card-item-thumb .card-focus:focus {
-  transform: translateY(0);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  color: #FFFFFF;
+  
   background: rgba(33, 150, 243, 0.9);
 
-  
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+/* or 156% */
+  color: #FFFFFF;
+
+  letter-spacing: 0.03em;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.item:hover .card-description {
+  overflow: visible;
   visibility: visible;
+
+  transform: translate(-50%, -68%);
+  background-size: 100%;
+  
 }
 
 

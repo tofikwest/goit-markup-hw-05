@@ -426,6 +426,10 @@ img {
 }
 
 .main-projects .item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-basis: calc(100% / 3 - var(--card-set-gap));
 
   margin-left: var(--card-set-gap);
@@ -434,6 +438,9 @@ img {
 .main-projects-content {
   position: absolute;
   bottom: 0px;
+
+  width: 100%;
+  
 
   background: rgba(47, 48, 58, 0.8);
   
@@ -445,16 +452,10 @@ img {
   text-transform: uppercase;
   
   color: #FFFFFF;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
-.main-projects-content.label-1 {
-  padding: 27px 82px;
-}
-.main-projects-content.label-2 {
-  padding: 27px 85px;
-}
-.main-projects-content.label-3 {
-  padding: 27px 90px;
-}
+
 
 .projects .all-title,
 .team .all-title,
@@ -543,11 +544,12 @@ img {
 
   margin-top: 16px;
 }
+.social-link-list:not(:last-child) {
+  margin-right: 10px;
+}
 
 .social-link-list .circle {
   display: flex;
-
-  margin-right: 10px;
 
   align-items: center;
   height: 44px;
@@ -896,7 +898,10 @@ img {
   cursor: pointer;
 }
 
-
+.card-item-overlay {
+  position: relative;
+  overflow: hidden;
+}
 .card-description {
   position: absolute;
   top: 50%;
@@ -931,7 +936,7 @@ img {
   overflow: visible;
   visibility: visible;
 
-  transform: translate(-50%, -68%);
+  transform: translate(-50%, -50%);
   /* background-size: 100%; */
   
 }

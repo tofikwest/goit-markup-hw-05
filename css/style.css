@@ -612,6 +612,7 @@ img {
 }
 .clients-link-logo:hover,
 .clients-link-logo:focus {
+  outline-color: #188ce8;
   border: 1px solid #188ce8;
 }
 

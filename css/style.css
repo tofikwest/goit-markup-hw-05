@@ -924,7 +924,8 @@ img {
 
 }
 
-.item:hover .card-description {
+.item:hover .card-description,
+.card-focus:focus .card-description {
   overflow: visible;
   visibility: visible;
 
@@ -932,6 +933,7 @@ img {
   background-size: 100%;
   
 }
+
 
 
 

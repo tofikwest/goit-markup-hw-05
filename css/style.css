@@ -144,11 +144,14 @@ img {
   font-size: 14px;
 }
 .site-nav .link {
+  
   display: block;
 
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+
 /* .site-nav .item {
   margin-right: 50px;
 }
@@ -240,18 +243,20 @@ img {
 }
 
 .site-nav .studio.current {
+  position: relative;
   color: var(--accent-color);
+  /* padding-bottom: 32px; */
+ 
 }
-.studio.current::after {
+.link.studio.current::after {
   position: absolute;
   content: '';
   display: block;
   background-color: #2196F3;
   height: 4px;
-  width: 48px;
+  width: 100%;
 
-  left: 0;
-  top: 76px;
+  bottom: 0;
 
   border-radius: 2px;
 }
@@ -262,15 +267,16 @@ img {
   display: block;
   background-color: #2196F3;
   height: 4px;
-  width: 100%;
+  width: 100%; 
 
-  left: 100px;
-  top: 76px;
-
+  bottom: 0;
+  
   border-radius: 2px;
+
 }
 
 .site-nav .portfolio.current {
+  position: relative;
   color: var(--accent-color);
 }
 
